@@ -20,6 +20,9 @@ class MessageBar extends LitElement {
     textColor = '#FFF';
 
     @property()
+    position = 'top';
+
+    @property()
     message = 'This is your message.';
 
     @property({
@@ -44,7 +47,7 @@ class MessageBar extends LitElement {
     }
 
     getWrapperStyles() {
-        return { backgroundColor: this.backgroundColor, color: this.textColor }
+        return { backgroundColor: this.backgroundColor, color: this.textColor, top: this.position === 'top' ? '0' : 'auto', bottom: this.position === 'bottom' ? '0' : 'auto' }
     }
 
     getButtonStyles() {
@@ -74,7 +77,6 @@ class MessageBar extends LitElement {
           
           .message-wrapper {
             position: fixed;
-            top: 0;
             left: 0;
             width: 100%;
             padding: 20px 45px;

@@ -1,8 +1,8 @@
 {
   "name": "@novicell/message-bar",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "dist/message-bar.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
@@ -11,6 +11,11 @@
   },
   "author": "Martin Hobert",
   "license": "ISC",
+  "files": [
+    "dist/*",
+    "src/*",
+    "README.md"
+  ],
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
