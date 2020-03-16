@@ -103,10 +103,23 @@ class MessageBar extends LitElement {
           
           .message-bar-close {
             position: absolute;
-            top: 20px;
+            top: 14px;
             right: 15px;
             font-size: 32px;
             cursor: pointer;
+            line-height: 1;
+          }
+          
+          @media (max-width: 769px) {
+            .message-wrapper__inner {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+            
+            .read-more {
+              margin-top: 5px;
+              margin-left: 0;
+            }
           }
           
           
@@ -116,7 +129,7 @@ class MessageBar extends LitElement {
     render(){
         return html`
             <div class="message-wrapper ${this.isHidden ? 'hide' : ''}" style=${styleMap(this.getWrapperStyles())}>
-                <div class="message-bar-close" @click="${this.closeBar}">X</div>
+                <div class="message-bar-close" @click="${this.closeBar}">&times;</div>
                 <div class="message-wrapper__inner">
                     ${this.message}
                     ${this.btnLink !== '' ? html`<a href=${this.btnLink} target=${this.target} class="read-more" style=${styleMap(this.getButtonStyles())}>${this.btnText}</a>` : null}

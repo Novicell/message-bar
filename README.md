@@ -9,10 +9,22 @@ The project is meant to help teams quickly drop in a status-bar in the top/botto
  ```
 npm install @novicell/message-bar
  ```
+
+Then you can include the package in your main.js or similar depending on your project accordingly
+
+```javascript
+import '@novicell/message-bar';
+``` 
  
  ### CDN (WIP)
  ```html
-<script src="https://thecdn.com/novicell/message-bar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@novicell/message-bar/dist/message-bar.js"></script>
+```
+
+or for a specific version
+
+ ```html
+<script src="https://cdn.jsdelivr.net/npm/@novicell/message-bar@0.0.3/dist/message-bar.js"></script>
 ```
 
 ## Usage
@@ -21,6 +33,7 @@ To use the application simply drop in the html tag
 ```html
 <message-bar background-color="#FF8387"
              href="https://google.com"
+             position="top"
              color="#fff"
              message="MERCANTEC ER LUKKET - AFLYSNING AF ALT UNDERVISNING FRA I DAG DEN 11. MARTS OG 14 DAGE FREM!
 "></message-bar>
