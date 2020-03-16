@@ -2,10 +2,10 @@
 The project is meant to help teams quickly drop in a status-bar in the top/bottom
  of their page if they have a message to share.
  
- ## Installation
+## Installation
  There is multiple ways to install the component, you can either install it as a NPM package, or you can include it directly from a CDN.
  
- ### NPM (WIP)
+### NPM (WIP)
  ```
 npm install @novicell/message-bar
  ```
@@ -16,7 +16,7 @@ Then you can include the package in your main.js or similar depending on your pr
 import '@novicell/message-bar';
 ``` 
  
- ### CDN (WIP)
+### CDN (WIP)
  ```html
 <script src="https://cdn.jsdelivr.net/npm/@novicell/message-bar/dist/message-bar.js"></script>
 ```
