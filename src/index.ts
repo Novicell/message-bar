@@ -81,6 +81,7 @@ class MessageBar extends LitElement {
             width: 100%;
             padding: 20px 45px;
             display: flex;
+            z-index: 999;
           }
           
           .message-wrapper__inner {
