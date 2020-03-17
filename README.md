@@ -35,8 +35,7 @@ To use the application simply drop in the html tag
              href="https://google.com"
              position="top"
              color="#fff"
-             message="MERCANTEC ER LUKKET - AFLYSNING AF ALT UNDERVISNING FRA I DAG DEN 11. MARTS OG 14 DAGE FREM!
-"></message-bar>
+             message="Breaking news: We are closed due to unforeseen circumstances"></message-bar>
 ```
 
 ### Options
