@@ -49,3 +49,4 @@ The component has multiple properties that you can use to adjust the look and fe
 * `href` - Sets the link of the button (Default: "") (Button wont be shown if no link is provided)
 * `button-text` - Sets the text within the button (Default: "Read more")
 * `target` - Decides if the link should open in the current page or a new window etc. (Default: "_self")
+* `fixed` - Decides if the bar should be positioned fixed or relative (Default: "fixed")

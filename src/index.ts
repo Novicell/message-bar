@@ -20,6 +20,9 @@ class MessageBar extends LitElement {
     textColor = '#FFF';
 
     @property()
+    fixed = 'true';
+
+    @property()
     position = 'top';
 
     @property()
@@ -47,7 +50,7 @@ class MessageBar extends LitElement {
     }
 
     getWrapperStyles() {
-        return { backgroundColor: this.backgroundColor, color: this.textColor, top: this.position === 'top' ? '0' : 'auto', bottom: this.position === 'bottom' ? '0' : 'auto' }
+        return { backgroundColor: this.backgroundColor, position: this.fixed === 'true' ? 'fixed' : 'relative', color: this.textColor, top: this.position === 'top' ? '0' : 'auto', bottom: this.position === 'bottom' ? '0' : 'auto' }
     }
 
     getButtonStyles() {
