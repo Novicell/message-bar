@@ -1,12 +1,17 @@
+[![npm version](https://img.shields.io/npm/v/@novicell/message-bar)](https://www.npmjs.com/package/@novicell/message-bar)
+![npm](https://img.shields.io/npm/dw/@novicell/message-bar)
+
 # @Novicell/message-bar
-The project is meant to help teams quickly drop in a status-bar in the top/bottom
- of their page if they have a message to share.
- 
+Quickly drop in a status-bar in the top/bottom of a page if you have an important message to share.
+
+## Demo
+Link to codepen: https://codepen.io/Novicell/pen/ZEGoXqe
+
 ## Installation
- There is multiple ways to install the component, you can either install it as a NPM package, or you can include it directly from a CDN.
+There is multiple ways to install the component, you can either install it as a NPM package, or you can include it directly from a CDN.
  
 ### NPM
- ```
+ ```sh
 npm install @novicell/message-bar
  ```
 
